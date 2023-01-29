@@ -1,0 +1,8 @@
+--- 
+- name: install postgress
+  hosts: all 
+  roles:
+    - role: geerlingguy.postgresql
+      postgress_port: 6543
+      become: yes
+  
