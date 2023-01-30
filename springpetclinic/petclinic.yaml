@@ -1,0 +1,9 @@
+--- 
+- name: install spring-petclinic
+  hosts: all
+  tasks:
+    - name: install java
+      ansible.builtin.apt: 
+        - name: install java 
+          update_cache: yes
+          state: present
